@@ -2,7 +2,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.DoubleAdder;
 
-/**
+/**cajera
  * Cajera.java
  * Cada instancia procesa clientes tomándolos de una cola compartida.
  * Actualiza contadores atómicos para tiempo total y monto total.

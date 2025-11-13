@@ -1,6 +1,6 @@
 import java.util.List;
 
-/**
+/**cliente
  * Cliente.java
  * Representa un cliente con una lista de productos.
  * Si es un cliente "POISON_PILL" para terminar, su lista de productos puede ser vacía

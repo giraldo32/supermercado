@@ -1,5 +1,5 @@
 
-/**
+/**producto
  * Producto.java
  * Representa un producto con nombre, precio y tiempo de procesamiento (ms).
  */

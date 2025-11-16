@@ -2,15 +2,32 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.DoubleAdder;
+import javax.swing.SwingUtilities;
 
 /**
  * Main.java
- * Punto de entrada. Crea productos, clientes, cola compartida y cajeras (hilos).
- * Ejecuta la simulación y muestra resultados finales.
+ * Punto de entrada. Puede ejecutarse en modo consola o con interfaz gráfica.
+ * Por defecto inicia la interfaz gráfica. Use "consola" como argumento para modo texto.
  */
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
+        // Si se pasa el argumento "consola", ejecuta en modo texto
+        if (args.length > 0 && args[0].equalsIgnoreCase("consola")) {
+            ejecutarModoConsola();
+        } else {
+            // Por defecto, inicia la interfaz gráfica
+            SwingUtilities.invokeLater(() -> {
+                InterfazSupermercado frame = new InterfazSupermercado();
+                frame.setVisible(true);
+            });
+        }
+    }
+    
+    /**
+     * Método original que ejecuta la simulación en modo consola
+     */
+    private static void ejecutarModoConsola() throws InterruptedException {
         // Parámetros configurables
         final int NUM_CAJERAS = 3;
         final int NUM_CLIENTES = 8;

@@ -128,7 +128,7 @@ public class InterfazSupermercado extends JFrame {
     private JLabel crearLabelEstadistica(String texto) {
         JLabel lbl = new JLabel(texto);
         lbl.setFont(new Font("Segoe UI", Font.BOLD, 14));
-        lbl.setForeground(Color.WHITE);
+        lbl.setForeground(Color.BLACK);
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         return lbl;
     }
@@ -210,7 +210,7 @@ public class InterfazSupermercado extends JFrame {
         tablaClientes.setRowHeight(25);
         tablaClientes.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
         tablaClientes.getTableHeader().setBackground(new Color(155, 89, 182));
-        tablaClientes.getTableHeader().setForeground(Color.WHITE);
+        tablaClientes.getTableHeader().setForeground(Color.BLACK);
         
         JScrollPane scrollPane = new JScrollPane(tablaClientes);
         panel.add(scrollPane, BorderLayout.CENTER);
